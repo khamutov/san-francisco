@@ -3,30 +3,34 @@ This document has been created with Marked.app <http://marked2app.com>
 Content is property of the document author
 Please leave this notice in place, along with any additional credits below.
 ---------------------------------------------------------------
-Title: Your style title
-Author: Your Name <your url>
-Description: Description of theme
-Non-standard fonts used: (optional) [Rockwell, Rokkit, etc.]
-Note: (optional) Additional notes, where to get custom fonts, etc.
+Title: San Francisco
+Author: Aleksandr Khamutov
+URL: https://github.com/khamutov/san-francisco
+Description: Typography inspired theme
+Non-standard fonts used: Roboto
+Note: Roboto font (from https://fonts.google.com/specimen/Roboto) and Fira Code (https://github.com/tonsky/FiraCode/wiki)
 ---
 */
 
 body {
     -webkit-font-smoothing: antialiased;
-    font: normal .8764em/1.5em Arial,Verdana,sans-serif;
+
+    font-size: 17px;
+    line-height: 1.52947;
+    font-weight: 300;
+    letter-spacing: -0.021em;
+    font-family: Roboto,"Open Sans",sans-serif;
+    background-color: white;
+    color: #333333;
+}
+
+ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr, button {
     margin: 0;
+    padding: 0;
 }
 
 html>body {
-    font-size: 13px;
-}
-
-li {
-    font-size: 110%;
-}
-
-li li {
-    font-size: 100%;
+    font-size: 17px;
 }
 
 li p {
@@ -35,38 +39,55 @@ li p {
 }
 
 h1 {
-    color: #000;
-    font-size: 2.2857em;
-    line-height: .6563em;
+    color: #333333;
+    font-family: Roboto,"Open Sans",sans-serif;
+    font-size: 34px;
+    line-height: 1.08824;
+    margin: .6563em 0;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+}
+
+h1 + p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 200;
+    letter-spacing: 0.017em;
+}
+
+h1 + p::after {
+    content: "";
+    display: block;
+    border-top: 1px solid #d6d6d6;
     margin: .6563em 0;
 }
 
 h2 {
-    color: #111;
-    font-size: 1.7143em;
-    line-height: .875em;
-    margin: .875em 0;
+    font-size: 28px;
+    line-height: 1.1073;
+    font-weight: 400;
+    letter-spacing: 0.012em;
 }
 
 h3 {
-    color: #111;
-    font-size: 1.5em;
-    line-height: 1em;
-    margin: 1em 0;
+    font-size: 24px;
+    line-height: 1.20849;
+    font-weight: 400;
+    letter-spacing: 0.015em;
 }
 
 h4 {
-    color: #111;
-    font-size: 1.2857em;
-    line-height: 1.1667em;
-    margin: 1.1667em 0;
+    font-size: 22px;
+    line-height: 1.22739;
+    font-weight: 400;
+    letter-spacing: 0.016em;
 }
 
 h5 {
-    color: #111;
-    font-size: 1.15em;
-    line-height: 1.3em;
-    margin: 1.3em 0;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 400;
+    letter-spacing: 0.017em;
 }
 
 h6 {
@@ -76,13 +97,15 @@ h6 {
 }
 
 body,p,td,div {
-    color: #111;
-    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
     word-wrap: break-word;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    line-height: 1.5em;
+dl + h1, dl + h2, dl + h3, dl + h4, dl + h5, dl + h6, p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+    margin-top: 1.4em;
+}
+
+h1 + *, h2 + *, h3 + *, h4 + *, h5 + *, h6 + * {
+    margin-top: 0.75em;
 }
 
 a {
@@ -118,6 +141,14 @@ li > p:first-child {
     margin: 0;
 }
 
+ul, ol {
+    margin-left: 2rem;
+}
+
+p + *, ul + *, ol + * {
+    margin-top: 0.7em;
+}
+
 ul ul,ul ol {
     margin-bottom: .4em;
 }
@@ -131,7 +162,6 @@ table {
     border-collapse: collapse;
     display: table;
     empty-cells: hide;
-    margin: -1px 0 23px;
     padding: 0;
     table-layout: fixed;
 }
@@ -231,6 +261,11 @@ figure:hover>figcaption {
     font-family: Georgia, Garamond, serif !important;
 }
 
+code {
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
+}
+
 blockquote p {
     font-size: 110%;
     font-style: italic;
@@ -248,12 +283,6 @@ sup,sub,a.footnote {
 sub {
     vertical-align: sub;
     top: -1px;
-}
-
-p,h5 {
-    font-size: 1.1429em;
-    line-height: 1.3125em;
-    margin: 1.3125em 0;
 }
 
 dt,th {
