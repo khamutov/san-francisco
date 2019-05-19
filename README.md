@@ -18,9 +18,9 @@ Custom Styles are added to the keyboard menu under Command-Opt-#, where # is 1-9
 
 ## Font download
 
-Roboto font (from https://fonts.google.com/specimen/Roboto) 
+Roboto font https://fonts.google.com/specimen/Roboto 
 
-Fira Code (https://github.com/tonsky/FiraCode/wiki)
+Fira Code https://github.com/tonsky/FiraCode/wiki
 
 
 
