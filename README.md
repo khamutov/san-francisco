@@ -1,4 +1,4 @@
-# San Francisco 🌉 style for [Marked 2](http://marked2app.com)
+# San Francisco style for [Marked 2](http://marked2app.com)
 
 Beautiful and clean typography inspired style for markdown :heart:
 
@@ -16,7 +16,7 @@ Then, open up the Style Preferences in Marked and click the "+" button under the
 
 Custom Styles are added to the keyboard menu under Command-Opt-#, where # is 1-9 in the order they're added.
 
-## Font donwload
+## Font download
 
 Roboto font (from https://fonts.google.com/specimen/Roboto) 
 
