@@ -266,10 +266,19 @@ code {
     font-size: 16px;
 }
 
-blockquote p {
-    font-size: 110%;
-    font-style: italic;
-    line-height: 1.6em;
+blockquote {
+    background-color: #fafafa;
+    border-color: #e6e6e6;
+    border-right: 6px solid transparent;
+
+    border-left-style: solid;
+    border-left-width: 6px;
+    border-radius: 6px;
+    padding: 0.94118rem;
+}
+
+blockquote + * {
+    margin-top: 1.4em;
 }
 
 sup,sub,a.footnote {
