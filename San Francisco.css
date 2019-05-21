@@ -306,6 +306,11 @@ table tr:nth-child(even),table td:nth-child(even) {
     background: rgba(200,200,200,0.25);
 }
 
+#wrapper #mkreplaced-toc li {
+    list-style-type: none;
+    font-weight: 300;
+}
+
 @media print {
     body {
         overflow: auto;
