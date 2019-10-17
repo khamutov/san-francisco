@@ -104,6 +104,10 @@ dl + h1, dl + h2, dl + h3, dl + h4, dl + h5, dl + h6, p + h1, p + h2, p + h3, p 
     margin-top: 1.4em;
 }
 
+h1, h2, h3, h4, h5 {
+    margin-top: 1.4em;
+}
+
 h1 + *, h2 + *, h3 + *, h4 + *, h5 + *, h6 + * {
     margin-top: 0.75em;
 }
@@ -145,8 +149,8 @@ ul, ol {
     margin-left: 2rem;
 }
 
-p + *, ul + *, ol + * {
-    margin-top: 0.7em;
+p {
+    margin: 0.7em 0;
 }
 
 ul ul,ul ol {
